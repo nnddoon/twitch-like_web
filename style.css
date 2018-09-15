@@ -11,9 +11,11 @@ body{
 }
 .row {
 	width: 1000px;
+	/*put element center*/
 	margin: 0px auto;
 	display: flex;
 	flex-wrap: wrap;
+	/*let items has same distance that was divided by the rest space*/
 	justify-content: space-around;
 }
 .col {
@@ -21,6 +23,7 @@ body{
 	display: inline-block;
 	/*margin-right: 20px;*/
 	margin-top: 20px;
+	/*fix div size which will automatically change size of item in div while changing border, padding, or margin*/
 	box-sizing: border-box;	
 }
 .preview img {
@@ -30,7 +33,7 @@ body{
 .bottom {
 	background: rgba(0, 0, 0, 0.6);
 	padding: 10px;
-	position: relative;
+	/*position: relative;*/
 	display: flex;
 	align-items: center;
 }
