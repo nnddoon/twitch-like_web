@@ -26,15 +26,15 @@ body{
 	/*margin-right: 20px;*/
 	margin-top: 20px;	
 	/*fix div size which will automatically change size of item in div while changing border, padding, or margin*/
-	box-sizing: border-box;		
-	transition:width 1s;
-	-moz-transition:width 1s; /* Firefox 4 */
-	-webkit-transition:width 1s; /* Safari and Chrome */
-	-o-transition:width 1s;
+	box-sizing: border-box;	
+	transition-duration: 0.5s;	
+	transition-delay: 1s;
+	transition-property:filter, box-shadow;
+	
 
 }
-.col:hover{
-	filter: brightness(1.2);
+.col:hover{	
+	filter: brightness(1);
 	box-shadow: 4px 4px 20px 4px black;
 }
 .preview img {
