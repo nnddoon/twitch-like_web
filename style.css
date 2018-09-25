@@ -5,34 +5,44 @@ body{
 }
 
 .container {
-	background: rgba(0, 0, 0, 0.5);
+	background: rgba(0, 0, 0, 0.1);
 	min-height: 100vh;
 	padding-top: 30px; 
 }
 .row {
-	margin:50px;
+	width: 1000px;
 	/*put element center*/
 	margin: 0px auto;
 	display: flex;
 	flex-wrap: wrap;
 	/*let items has same distance that was divided by the rest space*/
-	/*justify-content: space-around;*/
+	justify-content: space-around;
+	/*align-content:center;*/
 }
 .col {
-	width: 300px;
-	flex :1 ;
+	filter: brightness(0.8);
+	width: 300px;	
 	/*display: inline-block;*/
-	margin-right: 20px;
-	margin-top: 20px;
+	/*margin-right: 20px;*/
+	margin-top: 20px;	
 	/*fix div size which will automatically change size of item in div while changing border, padding, or margin*/
-	box-sizing: border-box;	
+	box-sizing: border-box;		
+	transition:width 1s;
+	-moz-transition:width 1s; /* Firefox 4 */
+	-webkit-transition:width 1s; /* Safari and Chrome */
+	-o-transition:width 1s;
+
+}
+.col:hover{
+	filter: brightness(1.2);
+	box-shadow: 4px 4px 20px 4px black;
 }
 .preview img {
 	width: 100%;
 }
 
 .bottom {
-	background: rgba(0, 0, 0, 0.6);
+	background: rgba(0, 0, 0, 0.5);
 	padding: 10px;
 	/*position: relative;*/
 	display: flex;
